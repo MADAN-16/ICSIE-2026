@@ -1,0 +1,8 @@
+
+C:\Users\ASUS\OneDrive\Desktop\icsie-conference\src\components\Contact\Contact.jsx
+  130:54  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  131:33  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  138:69  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+✖ 3 problems (3 errors, 0 warnings)
+

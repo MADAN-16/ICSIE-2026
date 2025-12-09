@@ -1,0 +1,8 @@
+
+> icsie-conference@0.0.0 build
+> vite build
+
+[36mvite v4.5.14 [32mbuilding for production...[36m[39m
+transforming...
+[32m???[39m 17 modules transformed.
+[32m??? built in 745ms[39m

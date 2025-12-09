@@ -1,0 +1,106 @@
+/* Minimal Background Animation */
+.minimal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Subtle Gradient Orbs */
+.gradient-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.15;
+  animation: float-gentle 20s ease-in-out infinite;
+}
+
+.orb-1 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.3), transparent);
+  top: 20%;
+  left: 10%;
+  animation-duration: 25s;
+}
+
+.orb-2 {
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.2), transparent);
+  bottom: 30%;
+  right: 15%;
+  animation-duration: 30s;
+  animation-delay: -10s;
+}
+
+.orb-3 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.25), transparent);
+  top: 60%;
+  left: 50%;
+  animation-duration: 35s;
+  animation-delay: -20s;
+}
+
+@keyframes float-gentle {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(30px, -30px);
+  }
+  66% {
+    transform: translate(-20px, 20px);
+  }
+}
+
+/* Floating Lines */
+.floating-lines {
+  position: absolute;
+  inset: 0;
+}
+
+.line {
+  position: absolute;
+  background: linear-gradient(90deg, transparent, rgba(14, 165, 233, 0.1), transparent);
+  height: 1px;
+  width: 100%;
+  animation: slide-horizontal 15s linear infinite;
+}
+
+.line-1 {
+  top: 20%;
+  animation-duration: 20s;
+}
+
+.line-2 {
+  top: 50%;
+  animation-duration: 25s;
+  animation-delay: -8s;
+}
+
+.line-3 {
+  top: 80%;
+  animation-duration: 30s;
+  animation-delay: -15s;
+}
+
+@keyframes slide-horizontal {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
